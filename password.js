@@ -10,3 +10,5 @@ function domEdit() {
   document.getElementById("output").value = ret.substring(0, 16);
   document.getElementById("output").select();
 }
+
+document.getElementById("pGen").addEventListener("submit", domEdit);
