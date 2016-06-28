@@ -7,13 +7,15 @@
 </head>
 <body>
 <div>
+<form id="pGen" action="javascript:domEdit()">
 <p>Key: <input name="keyvalue" type="password" placeholder="pass123" maxlength="32" id="key"/></p>
 <p>Website: <input name="sitevalue" placeholder="facebook.com" type="text" maxlength="128" id="site"/></p>
-<p><button type="button" onClick="domEdit()">Generate</button></p>
+<p><input type="submit" value="Generate" /></p>
+</form>
 <p>Password: <input readonly name="outvalue" type="text" maxlength="16" id="output"/></p>
 </div>
 <br />
 <br />
-<p><a href="https://github.com/meta1203/PasswordMaker/">Source on GitHub</a></p>
+<p><a href="https://github.com/meta1203/PasswordMaker/" target="_blank">Source on GitHub</a></p>
 </body>
 </html>
