@@ -9,6 +9,7 @@ function domEdit() {
   var ret = generatePassword(key, site);
   document.getElementById("output").value = ret.substring(0, 16);
   document.getElementById("output").select();
+  return false;
 }
 
 document.getElementById("pGen").addEventListener("submit", domEdit);
