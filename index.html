@@ -12,8 +12,8 @@ input {
 </head>
 <body>
 <div>
-<table>
 <form id="pGen" action="javascript:domEdit()">
+<table>
 <tr>
 <td>Key: </td>
 <td><input name="keyvalue" type="password" placeholder="pass123" maxlength="32" id="key"/></td>
@@ -22,10 +22,17 @@ input {
 <td>Website: </td>
 <td><input name="sitevalue" placeholder="facebook.com" type="text" maxlength="128" id="site"/></td>
 </tr>
-</table>
-<p><input type="submit" value="Generate" /></p>
+<tr>
+<td>&nbsp;</td>
+<td><input type="submit" value="Generate" /></td>
+</tr>
+
 </form>
-<p>Password: <input readonly name="outvalue" type="text" maxlength="16" id="output"/></p>
+<tr>
+<td>Password: </td>
+<td><input readonly name="outvalue" type="text" maxlength="16" id="output"/></tr>
+</tr>
+</table>
 </div>
 <br />
 <br />
