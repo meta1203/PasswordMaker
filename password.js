@@ -5,7 +5,7 @@ function generatePassword(key, site) {
 
 function domEdit() {
   var key = document.getElementById("key").value;
-  var site = document.getElementById("site").value;
+  var site = document.getElementById("site").value.toLowerCase();
   var ret = generatePassword(key, site);
   document.getElementById("output").value = ret.substring(0, 16);
   document.getElementById("output").select();

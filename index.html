@@ -4,15 +4,35 @@
 <script type="text/javascript" src="password.js"></script>
 <title>Password Maker</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style>
+input {
+  font-family: monospace;
+}
+</style>
 </head>
 <body>
 <div>
 <form id="pGen" action="javascript:domEdit()">
-<p>Key: <input name="keyvalue" type="password" placeholder="pass123" maxlength="32" id="key"/></p>
-<p>Website: <input name="sitevalue" placeholder="facebook.com" type="text" maxlength="128" id="site"/></p>
-<p><input type="submit" value="Generate" /></p>
+<table>
+<tr>
+<td>Key: </td>
+<td><input name="keyvalue" type="password" placeholder="pass123" maxlength="32" id="key"/></td>
+</tr>
+<tr>
+<td>Website: </td>
+<td><input name="sitevalue" placeholder="facebook.com" type="text" maxlength="128" id="site"/></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input type="submit" value="Generate" /></td>
+</tr>
+
 </form>
-<p>Password: <input readonly name="outvalue" type="text" maxlength="16" id="output"/></p>
+<tr>
+<td>Password: </td>
+<td><input readonly name="outvalue" type="text" maxlength="16" id="output"/></tr>
+</tr>
+</table>
 </div>
 <br />
 <br />
