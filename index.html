@@ -20,10 +20,10 @@
   </style>
 </head>
 
-<body>
+<body onload="breakingChangeAlert(event)">
   <div>
     <form id="pGen" action="javascript:domEdit()">
-      <table>
+      <table id="render_table">
         <tr>
           <td>
             <p class="stext">Key: </p>
@@ -41,16 +41,20 @@
           <td>&nbsp;</td>
           <td><input class="stext" type="submit" value="Generate" /></td>
         </tr>
-
+        <tr>
+          <td>
+            <p class="stext">Password: &nbsp;</p>
+          </td>
+          <td><input class="stext" readonly name="outvalue" type="text" maxlength="16" id="output" />
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="modern-version" checked />
+            <label for="modern-version">Enable modern generation strategy</label>
+          </td>
+        </tr>
+      </table>
     </form>
-    <tr>
-      <td>
-        <p class="stext">Password: &nbsp;</p>
-      </td>
-      <td><input class="stext" readonly name="outvalue" type="text" maxlength="16" id="output" />
-    </tr>
-    </tr>
-    </table>
   </div>
   <br />
   <br />
