@@ -5,7 +5,7 @@ Uses a keyphrase and the name of a website to generate random passwords for indi
 
 Uses an SHA-256 javascript library from http://caligatio.github.com/jsSHA/
 
-Public access is available at http://meta1203.github.io/PasswordMaker/
+Public access is available at https://meta1203.github.io/PasswordMaker/
 
 **2023-09-17 - Breaking Change!**
 
